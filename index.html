@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="asset/icon/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Formulario de registro</title>
+  </head>
+  <body>
+    <div class="contenedor-esquierda">
+      <h1 class="titulo">Aprende a codificar mirando a los demás</h1>
+      <p class="descripcion">
+        Vea cómo los desarrolladores experimentados resuelven problemas en
+        tiempo real. Ver tutoriales con guiones es excelente, pero comprender
+        cómo piensan los desarrolladores es invaluable.
+      </p>
+    </div>
+    <div class="contenedor-derecha">
+      <a href="#" class="enlace"
+        ><strong class="elace__resaltado">Prueba gratis durante 7 días </strong
+        >y luego $20/mes.</a
+      >
+      <form action="#" class="formulario" novalidate>
+        <div class="formulario__caja">
+          <input
+            type="text"
+            name="nombres"
+            id="nombres"
+            placeholder="Nombres"
+            class="formulario__entrada"
+          />
+          <img
+            src="asset/icon/icon-error.svg"
+            alt="Icono de error"
+            class="formulario__error"
+          />
+          <label for="nombres" class="formulario__validacion"
+            >El nombre no puede estar vacio</label
+          >
+        </div>
+        <div class="formulario__caja">
+          <input
+            type="text"
+            name="apellidos"
+            id="apellidos"
+            placeholder="Apellidos"
+            class="formulario__entrada"
+          />
+          <img
+            src="asset/icon/icon-error.svg"
+            alt="Icono de error"
+            class="formulario__error"
+          />
+          <label for="apellidos" class="formulario__validacion"
+            >El apellido no puede estar vacio</label
+          >
+        </div>
+
+        <div class="formulario__caja">
+          <input
+            type="email"
+            name="correo"
+            id="correo"
+            placeholder="Correo"
+            class="formulario__entrada"
+          />
+          <img
+            src="asset/icon/icon-error.svg"
+            alt="Icono de error"
+            class="formulario__error"
+          />
+          <label for="correo" class="formulario__validacion"
+            >El correo no puede estar vacio</label
+          >
+        </div>
+
+        <div class="formulario__caja">
+          <input
+            type="password"
+            name="contraseña"
+            id="contraseña"
+            placeholder="Contraseña"
+            class="formulario__entrada"
+          />
+          <img
+            src="asset/icon/icon-error.svg"
+            alt="Icono de error"
+            class="formulario__error"
+          />
+          <label for="contraseña" class="formulario__validacion"
+            >La contraseña no puede estar vacía</label
+          >
+        </div>
+        <input
+          type="submit"
+          value="Reclama tu prueba gratis"
+          class="formulario__enviar"
+        />
+        <p class="terminos">
+          Al hacer clic en el botón, acepta nuestros
+          <strong class="terminos__resaltado"
+            ><a href="#" class="terminos__enlace"
+              >Términos y servicios</a
+            ></strong
+          >
+        </p>
+      </form>
+    </div>
+    <script src="js/validacion.js"></script>
+  </body>
+</html>
